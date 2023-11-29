@@ -1,6 +1,0 @@
-#!/bin/bash
-<<<<<<< HEAD
-=======
-PYFILE='main.py'
->>>>>>> ad2f7732c6410809e3f25b8b008428612dce2bbc
-python3 "$PYFILE"
