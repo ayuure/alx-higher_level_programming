@@ -12,4 +12,4 @@ if __name__ == "__main__":
 
     elif length > 1:
         for i in range (length):
-            print('{}: {}'.format(i,sys.argv[i]))
+            print('{}: {}'.format(i + 1,sys.argv[i + 1]))
