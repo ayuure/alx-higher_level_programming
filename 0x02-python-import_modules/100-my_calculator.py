@@ -24,6 +24,6 @@ if __name__ == "__main__":
         elif sys.argv[2] == "/":
             print('{} + {} = {}'.format(a, b, sub(a,b)))
 
-    else:
-        print("Unknown operator. Available operators: +, -, * and /")
-        sys.exit(1)
+        else:
+            print("Unknown operator. Available operators: +, -, * and /")
+            sys.exit(1)
