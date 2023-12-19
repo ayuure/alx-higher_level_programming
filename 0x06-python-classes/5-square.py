@@ -28,6 +28,5 @@ class Square:
         if self.__size == 0:
             print()
         theSq = "#" * (self.__size)
-        print("Size is: {}".format(self.__size))
         for _ in range (self.__size):
             print(theSq)
