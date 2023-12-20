@@ -8,11 +8,13 @@ class Square:
     """
     def __init__(self, size=0):
         self.__size = size
+    @property
     def size(self):
         """
         A area for representing the calculation of area of a square.
         """
         return self.__size
+    @size.setter
     def size(self, value):
         """
         A self value method for representing the calculation of area of a square.
