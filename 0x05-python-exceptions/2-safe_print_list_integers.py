@@ -14,7 +14,7 @@ def safe_print_list_integers(my_list=[], x=0):
             num *= 10
             num += my_list[i]
             i += 1
-        print("{}".format(num))
+        print("{:d}".format(num))
     except TypeError:
         i = 0
         num = 0
