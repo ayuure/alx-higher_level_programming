@@ -7,7 +7,6 @@ def safe_print_list(my_list=[], x=0):
 
     for vals in my_list:
         length += 1
-
     try:
         while x > 0:
             num *= 10
@@ -25,13 +24,3 @@ def safe_print_list(my_list=[], x=0):
             i += 1
         print('{:d}'.format(num))
         return my_list[-1]
-   
-
-my_list = [1, 2, 3, 4, 5]
-
-nb_print = safe_print_list(my_list, 2)
-print("nb_print: {:d}".format(nb_print))
-nb_print = safe_print_list(my_list, len(my_list))
-print("nb_print: {:d}".format(nb_print))
-nb_print = safe_print_list(my_list, len(my_list) + 2)
-print("nb_print: {:d}".format(nb_print))
