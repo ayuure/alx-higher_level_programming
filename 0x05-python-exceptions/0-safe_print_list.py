@@ -3,7 +3,7 @@ def safe_print_list(my_list=[], x=0):
     length = 0
     i = 0
     num = 0
-    val = x - 1
+    val = x
 
     for vals in my_list:
         length += 1
@@ -14,7 +14,7 @@ def safe_print_list(my_list=[], x=0):
             num += my_list[i]
             i += 1
         print('{:d}'.format(num))
-        return my_list[val]
+        return val
     except IndexError:
         i = 0
         num = 0
