@@ -72,3 +72,4 @@ class Rectangle:
         print of rectangle
         """
         return self.print_str()
+    
