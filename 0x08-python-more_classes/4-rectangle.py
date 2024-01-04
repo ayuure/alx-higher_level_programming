@@ -60,3 +60,5 @@ class Rectangle:
         return str_.rstrip('\n')
     def __str__(self):
         return self.print_str()
+    def __repr__(self):
+        return 'Rectangle({}, {})'.format(self.__width, self.__height)
