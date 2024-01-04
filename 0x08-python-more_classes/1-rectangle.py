@@ -2,6 +2,8 @@
 """
     This is a class module
 """
+
+
 class Rectangle:
     """
     Rectangle class
