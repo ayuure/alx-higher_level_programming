@@ -79,12 +79,15 @@ class Rectangle:
         return 'Rectangle({}, {})'.format(self.__width, self.__height)
     def __del__(self):
         """
-        Delete the rectangel message
+        Delete the rectangle message
         """
         print('Bye rectangle...')
         Rectangle.number_of_instances -= 1
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
+        """
+        Static method for the rec
+        """
         if not isinstance(rect_1, Rectangle):
             raise TypeError('rect_1 must be an instance of Rectangle rect_2')
         if not isinstance(rect_2, Rectangle):
@@ -95,4 +98,7 @@ class Rectangle:
             return rect_2
     @classmethod
     def square(cls, size=0):
+        """
+        A class for the rectangle
+        """
         return cls(size,size)
