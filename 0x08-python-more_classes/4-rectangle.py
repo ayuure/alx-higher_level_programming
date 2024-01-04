@@ -84,4 +84,3 @@ class Rectangle:
         print of rectangle here
         """
         return 'Rectangle({}, {})'.format(self.__width, self.__height)
-    
