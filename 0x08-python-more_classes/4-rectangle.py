@@ -48,10 +48,16 @@ class Rectangle:
     def area(self):
         return self.__height * self.__width
     def perimeter(self):
+        """
+        perimeter of rectangle
+        """
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__height + self.__width)
     def print_str(self):
+        """
+        print of rectangle
+        """
         str_ = ""
         if self.__width == 0 or self.__height == 0:
             return ""
@@ -59,6 +65,12 @@ class Rectangle:
             str_ += "#" * self.__width +'\n'
         return str_.rstrip('\n')
     def __str__(self):
+        """
+        print of rectangle
+        """
         return self.print_str()
     def __repr__(self):
+        """
+        print of rectangle here
+        """
         return 'Rectangle({}, {})'.format(self.__width, self.__height)
