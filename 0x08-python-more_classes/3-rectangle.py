@@ -13,7 +13,7 @@ class Rectangle:
     init Rectangle class
     """
         self.__height = height
-        self.__width = width     
+        self.__width = width
 
     @property
     def width(self):
@@ -73,7 +73,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         for i in range(self.__height):
-            str_ += "#" * self.__width +'\n'
+            str_ += "#" * self.__width + '\n'
         return str_.rstrip('\n')
 
     def __str__(self):
