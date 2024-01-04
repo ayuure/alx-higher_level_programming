@@ -11,7 +11,8 @@ class Rectangle:
     init Rectangle class
     """
         self.__height = height
-        self.__width = width           
+        self.__width = width     
+          
     @property
     def width(self):
         """
@@ -25,7 +26,7 @@ class Rectangle:
         """
         if not isinstance(value, int):
             raise TypeError('width must be an integer')
-        if value < 0:
+        if value < 0: 
             raise ValueError('width must be >= 0')
         self.__width = value
     @property
@@ -41,6 +42,21 @@ class Rectangle:
         """
         if not isinstance(value, int):
             raise TypeError('height must be an integer')
-        if value < 0:
+        if value < 0: 
             raise ValueError('height must be >= 0')
         self.__height = value
+    def area(self):
+        return self.__height * self.__width
+    def perimeter(self):
+        if self.__width == 0 or self.__height == 0:
+            return 0
+        return 2 * (self.__height + self.__width)
+    def print_str(self):
+        str_ = ""
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        for i in range(self.__height):
+            str_ += "#" * self.__width +'\n'
+        return str_.rstrip('\n')
+    def __str__(self):
+        return self.print_str()
