@@ -20,13 +20,13 @@ Checking that error is raise when b is not a float
     TypeError: b must be an integer
 
 Checking that error is rasied when a is not an int
->>> add_integer(' ', 9) +NORMALIZE_WHITESPACE
+>>> add_integer('school', 9) +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
 
 Checking that error is raise when b is not a int
-    >>> add_integer(1,' ') +NORMALIZE_WHITESPACE
+    >>> add_integer(1,'school') +NORMALIZE_WHITESPACE
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
