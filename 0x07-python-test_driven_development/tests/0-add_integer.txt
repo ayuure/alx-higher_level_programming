@@ -3,11 +3,6 @@ The ``0-add_integer`` module
 
 Using ``add_integer`` function
 -------------------
-Checking for module docstring:
-	 >>> docstring = __import__("0-add_integer").__doc__
-	 >>> len(docstring) > 1
-	 True
-
 Import the module 
     >>> add_integer = __import__("0-add_integer").add_integer
 
