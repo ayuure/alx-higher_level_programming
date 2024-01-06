@@ -7,11 +7,11 @@ Import the module
     >>> add_integer = __import__("0-add_integer").add_integer
 
 Checking for module docstring:
-	 >>> docstring = __import__("0-add_integer").__doc__
-	 >>> len(docstring) > 1
-	 Traceback (most recent call last):
-     ...
-     TypeError: object of type 'NoneType' has no len()
+	>>> docstring = __import__("0-add_integer").__doc__
+	>>> len(docstring) > 1
+	Traceback (most recent call last):
+    ...
+    TypeError: object of type 'NoneType' has no len()
 
 Checking that error is rasie when a is not a float
     >>> add_integer('a', 9) #doctest: +NORMALIZE_WHITESPACE
