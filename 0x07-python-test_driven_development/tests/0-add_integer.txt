@@ -8,7 +8,7 @@ Import the module
     >>> add_integer = __import__("0-add_integer").add_integer
 
 Checking that error is rasie when a is not a float
-    >>> add_integer('a', 9) #doctest: +REPORT_NDIFF
+    >>> add_integer('a', 9) #doctest: +NORMALIZE_WHITESPACE
         Traceback (most recent call last):
             rasie TypeError('a must be an integer)
         TypeError: a must be an integer
