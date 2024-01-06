@@ -20,7 +20,7 @@ Checking that error is raise when b is not a float
     TypeError: b must be an integer
 
 Checking that error is rasied when a is not an int
->>> add_integer('school', 9)
+>>> add_integer('school', 9) #doctest: +REPORT_NDIFF
     Traceback (most recent call last):
     ...
     TypeError: a must be an integer
@@ -45,5 +45,6 @@ check that negative numbers give the rigth return value
 
 check that when no value is inputed an error is raise
     >> add_integer()
-    0
-
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
