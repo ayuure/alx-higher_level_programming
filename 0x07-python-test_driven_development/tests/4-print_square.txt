@@ -33,4 +33,4 @@ Check that when the size is not added an error is rasie:
 
 check that zero is allowed for size:
     >>> print_square(0)
-    <BLANKSPACE>
+    
