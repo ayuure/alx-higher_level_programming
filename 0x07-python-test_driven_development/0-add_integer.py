@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""TFunction to add int"""
+
+
 def add_integer(a, b=98):
     """
     Add inter funtion that adds two float and or int values and returns the result
