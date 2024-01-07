@@ -8,13 +8,13 @@ Import the module
 
 check that size is less than zero raise an error
     >>> print_square(-1)
-    Traceback (rasie most recent call last):
+    Traceback (most recent call last):
     ...
     ValueError: size must be >= 0
 
 check that size is an integer/float or raise error
     >>> print_square('a')
-    Traceback (rasie most recent call last):
+    Traceback (most recent call last):
     ...
     TypeError: size must be an integer
 
