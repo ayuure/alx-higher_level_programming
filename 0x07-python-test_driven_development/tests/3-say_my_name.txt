@@ -4,7 +4,7 @@ The ``3-say_my_name`` module
 Using ``say_my_name`` function
 -------------------
 Import the module
-say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 check that firstname is a string 
     >>> say_my_name(1, "Ayuure")
