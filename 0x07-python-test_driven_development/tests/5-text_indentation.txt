@@ -15,17 +15,23 @@ check that text is a string or rasie error:
 check that text produces the right result:
     >>> text_indentation("lorum.Here")
     lorum.
-
+    <BLANKLINE>
+    <BLANKLINE>
     Here
+    <BLANKLINE>
+    <BLANKLINE>
 
 check that text produces the right result:
     >>> text_indentation("here?")
     here?
-
+    <BLANKLINE>
+    <BLANKLINE>
 
 check that text produces the right result;
     >>> text_indentation("here:there")
     here:
-    
-    
+    <BLANKLINE>
+    <BLANKLINE>
     there
+    <BLANKLINE>
+    <BLANKLINE>
