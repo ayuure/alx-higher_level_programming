@@ -13,7 +13,7 @@ check that text is a string or rasie error:
     TypeError: text must be a string
 
 check that text produces the right result:
-    >>> text_indentation("lorum.Here")
+    >>> text_indentation("lorum.Here") #doctest: +NORMALIZE_WHITESPACE
     lorum.
     <BLANKLINE>
     <BLANKLINE>
@@ -22,13 +22,13 @@ check that text produces the right result:
     <BLANKLINE>
 
 check that text produces the right result:
-    >>> text_indentation("here?")
+    >>> text_indentation("here?") #doctest: +NORMALIZE_WHITESPACE
     here?
     <BLANKLINE>
     <BLANKLINE>
 
 check that text produces the right result;
-    >>> text_indentation("here:there")
+    >>> text_indentation("here:there") #doctest: +NORMALIZE_WHITESPACE
     here:
     <BLANKLINE>
     <BLANKLINE>
