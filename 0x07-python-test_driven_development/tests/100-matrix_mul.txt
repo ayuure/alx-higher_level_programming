@@ -11,4 +11,4 @@ checking that the right answer is produced
     [[7, 10], [15, 22]]
 
 check that an error is rasie when m_a is not a list
->>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])

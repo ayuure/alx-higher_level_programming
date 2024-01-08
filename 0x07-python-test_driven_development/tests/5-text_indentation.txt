@@ -12,3 +12,20 @@ check that text is a string or rasie error:
     ...
     TypeError: text must be a string
 
+check that text produces the right result:
+    >>> text_indentation("lorum.Here")
+    lorum.
+
+    Here
+
+check that text produces the right result:
+    >>> text_indentation("here?")
+    here?
+
+
+check that text produces the right result;
+    >>> text_indentation("here:there")
+    here:
+    
+    
+    there
