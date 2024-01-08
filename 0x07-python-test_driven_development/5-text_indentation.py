@@ -1,19 +1,19 @@
-#!/usr/bin/python3
-"""
-Test with negative
-"""
-
-
 def text_indentation(text):
-    """print a text on separate line"""
-    before = ''
+    """Print a text on separate lines with 2 new lines after ., ? and :"""
     if not isinstance(text, str):
         raise TypeError('text must be a string')
-    for i in text:
-        before += i
-        for j in ['.', '?', ':']:
-            if i == j:
-                print(before.strip())
-                print("")
-                print("")
-                before = ''
+
+    separators = ['.', '?', ':']
+    current_line = ''
+
+    for char in text:
+        current_line += char
+
+        if char in separators:
+            print(current_line.strip())  # strip to remove leading/trailing whitespaces
+            print("")
+            print("")
+            current_line = ''
+
+    if current_line:
+        print(current_line.strip())
