@@ -30,7 +30,7 @@ check that providng last_name and first_name that arent strings rasies an error
 
 Check that not providing a value for the firstname rasies and error
     >>> say_my_name()
-    Traceback (recent call last):
+    Traceback (most recent call last):
     ...
     TypeError: say_my_name() missing 1 required positional argument: 'first_name'
     
