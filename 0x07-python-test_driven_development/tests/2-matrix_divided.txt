@@ -25,7 +25,7 @@ check that an erro is thrown when the matrix are not of the same lenght
     TypeError: Each row of the matrix must have the same size
 
 check that div is a number or rasie an error
-    >>> matrix_divided([[1, 2, 3],[4, 5]], 'string')
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 'string')
     Traceback (most recent call back)
     ...
     TypeError: div must be a number
