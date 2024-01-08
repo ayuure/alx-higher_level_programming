@@ -1,5 +1,7 @@
 def text_indentation(text):
-    """Print a text on separate lines with 2 new lines after ., ? and :"""
+    """
+    Print a text on separate lines with 2 new lines after ., ? and :
+    """
     if not isinstance(text, str):
         raise TypeError('text must be a string')
 
@@ -10,7 +12,7 @@ def text_indentation(text):
         current_line += char
 
         if char in separators:
-            print(current_line.strip())  # strip to remove leading/trailing whitespaces
+            print(current_line.strip())
             print("")
             print("")
             current_line = ''
