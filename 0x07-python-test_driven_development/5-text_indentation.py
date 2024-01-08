@@ -13,7 +13,7 @@ def text_indentation(text):
         before += i
         for j in ['.', '?', ':']:
             if i == j:
-                print(before)
+                print(before.strip())
                 print("")
                 print("")
                 before = ''
