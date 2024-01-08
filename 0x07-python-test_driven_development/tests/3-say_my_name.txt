@@ -24,7 +24,7 @@ check that not providing a lastname doesn't rasie an error
 
 check that providng last_name and first_name that arent strings rasies an error
     >>> say_my_name(1, 2)
-        Traceback (rasie most recent call last):
+    Traceback (rasie most recent call last):
     ...
     TypeError: first_name must be a string
 
