@@ -1,4 +1,11 @@
+#!/usr/bin/python3
+"""
+comment here
+"""
+
+
 def append_after(filename="", search_string="", new_string=""):
+    """Another comment in here"""
     with open(filename, 'r') as file:
         lines = file.readlines()
 
