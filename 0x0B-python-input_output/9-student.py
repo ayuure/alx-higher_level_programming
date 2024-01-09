@@ -14,8 +14,4 @@ class Student():
 
     def to_json(self):
         """Serization function"""
-        return{
-            "first_name": self.first_name,
-            "last_name": self.last_name,
-            "age": self.age
-            }
+        return{self.__dict__}
