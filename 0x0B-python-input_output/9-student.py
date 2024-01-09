@@ -1,4 +1,8 @@
+#!/usr/bin/python3
+"""This is a class"""
+
 class Student():
+    """Student class to is converted to json"""
     first_name = ''
     last_name = ''
     age = 0
@@ -8,6 +12,7 @@ class Student():
         self.age = age
 
     def to_json(self):
+        """Serization function"""
         return{
             "first_name": self.first_name,
             "last_name": self.last_name,
