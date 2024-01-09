@@ -2,6 +2,7 @@
 """
 Function that writes to a file
 """
+
 import json
 
 
