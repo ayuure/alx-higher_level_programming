@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """This is a class"""
+
+
 class Student():
     """class the converts to a dict"""
     def __init__(self, first_name, last_name, age):
@@ -10,8 +12,8 @@ class Student():
     def to_json(self, attrs=None):
         """filter to make sure attr is in the class"""
         if attrs is None:
-            return {
-                "first_name": self.first_name, 
+            return{
+                "first_name": self.first_name,
                 "last_name": self.last_name,
                 "age": self.age
                     }
