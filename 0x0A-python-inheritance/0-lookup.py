@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-retrun list
+module to retrun list of 
+objects
 """
 
 
