@@ -18,4 +18,5 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         """str to print out"""
-        return '[{:s}] {:d}/{:d} '.format(self.__class__.__name__, self.__width, self.__height)
+        className = self.__class__.__name__
+        return '[{:s}] {:d}/{:d} '.format(className, self.__width, self.__height)
