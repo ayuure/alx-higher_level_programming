@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """This is a bass class"""
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """class for bassGeo"""
@@ -13,9 +13,9 @@ class Rectangle(BaseGeometry):
         self.__height = height
 
     def area(self):
-         """area method"""
-         return self.__width * self.__height
-        
+        """area method"""
+        return self.__width * self.__height
+
     def __str__(self):
         """str to print out"""
         return '[{:s}] {:d}/{:d} '.format(self.__class__.__name__, self.__width, self.__height)
