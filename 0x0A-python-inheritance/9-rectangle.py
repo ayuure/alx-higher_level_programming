@@ -9,5 +9,13 @@ class Rectangle(BaseGeometry):
         """init method"""
         self.integer_validator("width", width)
         self.integer_validator("height", height)
-        self._width = width
-        self._height = height
+        self.__width = width
+        self.__height = height
+
+    def area(self):
+         """area method"""
+         return self.__width * self.__height
+        
+    def _str_(self):
+        """str to print out"""
+        return '[{:s}] {:d} {:d} '.format(self.__class__.__name__, self.__width, self.__height)
