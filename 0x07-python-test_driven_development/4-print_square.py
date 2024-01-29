@@ -6,7 +6,7 @@ print square
 
 def print_square(size):
     """print a square n number of times"""
-    if not isinstance(size, (int, float)):
+    if type(size)  is not int:
         raise TypeError('size must be an integer')
     if size < 0:
         raise ValueError('size must be >= 0')
