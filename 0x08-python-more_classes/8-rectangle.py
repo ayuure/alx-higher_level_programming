@@ -66,28 +66,22 @@ class Rectangle:
             return 0
         return 2 * (self.__height + self.__width)
 
-    def print_str(self):
+    def __str__(self):
         """
         print of rectangle
         """
         str_ = ''
         if self.__width == 0 or self.__height == 0:
             return ""
-        for i in range(self.__height):
+        for _ in range(self.__height):
             str_ += str(self.print_symbol) * self.__width + '\n'
         return str_.rstrip('\n')
-
-    def __str__(self):
-        """
-        print of rectangle
-        """
-        return self.print_str()
 
     def __repr__(self):
         """
         print of rectangle here
         """
-        return 'Rectangle({}, {})'.format(self.__width, self.__height)
+        return 'Rectangle({:d}, {:d})'.format(self.__width, self.__height)
 
     def __del__(self):
         """
@@ -108,4 +102,4 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         else:
-            return rect_2
+             return rect_1 if rect_1.area() >= rect_2.area() else rect_2
