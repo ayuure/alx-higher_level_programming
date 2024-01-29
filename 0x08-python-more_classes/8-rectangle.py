@@ -13,8 +13,8 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """
-    init Rectangle class
-    """
+        init Rectangle class
+        """
         self.__height = height
         self.__width = width
         Rectangle.number_of_instances += 1
@@ -102,4 +102,4 @@ class Rectangle:
         if rect_1.area() >= rect_2.area():
             return rect_1
         else:
-             return rect_1 if rect_1.area() >= rect_2.area() else rect_2
+            return rect_1 if rect_1.area() >= rect_2.area() else rect_2
