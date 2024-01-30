@@ -12,13 +12,21 @@ def diary():
         print('Enter 3 to delete an exisiting file')
         print('Enter 0 to exit')
         duty = input()
-        if duty not in ['0','1','2','3']:
-            raise TypeError('Wrong Input. Acceptable inputs are 0, 1, 2, 3')
+        try:
+            if duty in ['0','1','2','3']:
+                filename = input('Enter name of file\n')
+                if duty == 1:
+                    entries(filename)
+                    time(filename)
+                elif duty == 2:
+                    updatfFile(filename)
+                elif duty == 3:
+                    delete(filename)
+                elif duty == 0:
+                    duty = 0
+        except TypeError:
+            print('Wrong Input. Acceptable inputs are 0, 1, 2, 3')
 
         
-    
 
-try:
-    diary()
-except TypeError as e:
-    print(e)
+diary()
