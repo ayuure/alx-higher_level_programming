@@ -20,7 +20,7 @@ Check that last name is a string
 
 check that not providing a lastname doesn't rasie an error
     >>> say_my_name("Bob")
-    My name is Bob
+    My name is Bob 
 
 check that providng last_name and first_name that arent strings rasies an error
     >>> say_my_name(1, 2)
