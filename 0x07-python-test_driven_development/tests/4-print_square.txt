@@ -33,4 +33,22 @@ Check that when the size is not added an error is rasie:
 
 check that zero is allowed for size:
     >>> print_square(0)
+
+check if 10 is passed as an argument
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+check if -negative value is passed integer
+    >>> print_square(-1)
+    size must be >= 0
+
     

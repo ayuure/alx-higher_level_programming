@@ -7,8 +7,10 @@ Import the module
     >>> matrix_mul = __import__('100-matrix_mul').matrix_mul
 
 checking that the right answer is produced
-    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+    >>> m = [[1, 2], [3, 4]], [[1, 2], [3, 4]]
+    >>> matrix_mul(m)
     [[7, 10], [15, 22]]
 
 check that an error is rasie when m_a is not a list
-    >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+    >>> m = [[1, 2], [3, 4]], [[1, 2], [3, 4]]
+    >>> matrix_mul(m)
