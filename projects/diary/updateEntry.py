@@ -1,8 +1,11 @@
 import datetime
-def updatefile(filename):
+import os
+def updatefile(filename, text):
     date =  datetime.datetime.now()
     update_date = date.strftime('%a - %d/%b/%Y')
-    text = input('Enter update\n')
-    with open(filename, mode='a', encoding='utf-8') as f:
-        f.write(text +'/n')
-        f.writ(update_date)
+    if os.path.exists(filename):
+        with open(filename, mode='a', encoding='utf-8') as f:
+            f.write('\n' + text)
+            f.write(' - Updated on: ' + update_date)
+    else:
+        raise FileExistsError('file does not exist')
