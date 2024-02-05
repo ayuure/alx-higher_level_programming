@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""This is a class for square"""
 Rectangle = __import__('9-rectangle').Rectangle
+"""This is a class for square"""
 
 
 class Square(Rectangle):
