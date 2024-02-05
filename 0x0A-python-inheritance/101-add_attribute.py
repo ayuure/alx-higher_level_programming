@@ -2,7 +2,7 @@
 """method to add attribute"""
 
 
-def add_attr(obj, attribute, value):
+def add_attribute(obj, attribute, value):
     """
     function to add attribute when called
     obj (any): The object to add an attribute to.
