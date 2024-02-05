@@ -12,10 +12,6 @@ class Square(Rectangle):
         super().__init__(size, size)
         self.__size = size
 
-    def area(self):
-        """area not implemented"""
-        pass
-
     def __str__(self):
         """print out format"""
         className = self.__class__.__name__
