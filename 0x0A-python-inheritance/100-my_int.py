@@ -6,7 +6,7 @@ class MyInt(int):
     """+My int flips the logic of == and !="""
     def __init__(self, value):
         """ init method"""
-        self.value =  value
+        self.value = value
 
     def __eq__(self, other):
         """equal to method changed to !="""
