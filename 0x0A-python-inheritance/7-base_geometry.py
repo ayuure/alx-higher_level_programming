@@ -1,19 +1,16 @@
 #!/usr/bin/python3
+"""This is a bass class"""
 
 
 class BaseGeometry():
-    """for use with shapes. Super class.
-    """
-
+    """class for bassGeo"""
     def area(self):
-        """instance method to calculate area of shape
-        """
-        raise Exception("area() is not implemented")
+        """area of baseGeo"""
+        raise Exception('area() is not implemented')
 
     def integer_validator(self, name, value):
-        """validates integer input
-        """
+        """Validator for integer"""
         if type(value) != int:
-            raise TypeError(name + " must be an integer")
+            raise TypeError('{} must be an integer'.format(name))
         elif value <= 0:
-            raise ValueError(name + " must be greater than 0")
+            raise ValueError('{} must be greater than 0'.format(name))
