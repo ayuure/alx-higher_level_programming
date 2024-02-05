@@ -9,8 +9,8 @@ class Square(Rectangle):
         """initializes size
         """
         self.integer_validator("size", size)
-        super().__init__(size, size)
         self.__size = size
+        super().__init__(size, size)
 
     def _str_(self):
         """informal string reepresentation of the square"""
