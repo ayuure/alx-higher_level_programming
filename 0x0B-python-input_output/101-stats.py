@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import sys
+"""function for print state"""
 
 
 def print_stats(total_size, status_counts):
@@ -34,3 +35,7 @@ def main():
     except KeyboardInterrupt:
         print_stats(total_size, status_counts)
         raise
+
+
+if __name__ == "__main__":
+    main()
