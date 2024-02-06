@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 import sys
 
+
 def print_stats(total_size, status_counts):
     """print states"""
     print("File size:", total_size)
     for code in sorted(status_counts.keys()):
         print("{}: {}".format(code, status_counts[code]))
+
 
 def parse_line(line):
     """parse lines"""
@@ -13,6 +15,7 @@ def parse_line(line):
     size = int(parts[-1])
     code = parts[-2]
     return size, code
+
 
 def main():
     """main function"""
@@ -31,6 +34,7 @@ def main():
     except KeyboardInterrupt:
         print_stats(total_size, status_counts)
         raise
+
 
 if __name__ == "__main__":
     main()
