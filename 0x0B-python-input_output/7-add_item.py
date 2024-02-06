@@ -3,17 +3,17 @@
 Script to save and load files
 """
 from sys import argv
+from os import path
 save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
 load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
 file = "add_item.json"
-my_list = []
 
-try:
+if path.exists(file):
     my_list = load_from_json_file(file)
-except Exception:
-    my_list = save_to_json_file(my_list, file)
+else:
+    my_list = []
 
 if len(argv) > 1:
     for i in range(1, len(argv)):
