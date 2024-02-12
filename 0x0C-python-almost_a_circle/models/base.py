@@ -46,7 +46,6 @@ class Base():
         instance = cls(**kwargs)  # Create an instance using keyword arguments
         return instance
 
-    
     @classmethod
     def load_from_file_csv(cls):
         """Deserialize instances from CSV file"""
@@ -85,7 +84,7 @@ class Base():
                             "y": row[3]}
                 list_objs.append(cls.create(**objs))
         return list_objs
-    
+
     @staticmethod
     def draw(list_rectangles, list_squares):
         ''' turtle graphics draws all the Rectangles and Squares '''
