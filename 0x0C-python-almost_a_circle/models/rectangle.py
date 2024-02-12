@@ -79,9 +79,8 @@ class Rectangle(Base):
 
     def __str__(self):
         """str overwrite method"""
-        return '[{}] ({}) {}/{} - {}/{}'.format(__class__.__name__ ,
-                                                self.id, self.x, self.y, 
-                                                self.__width, self.__height)
+        return '[{}] ({}) {}/{} - {}/{}'.format(__class__.__name__ ,self.id, self.x,
+                                                 self.y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """update method"""
@@ -96,7 +95,7 @@ class Rectangle(Base):
     def to_dictionary(self):
         """to dictionary method"""
         new_dic = {'id': self.id, 'width': self.width,
-                   'height': self.height, 'x':self.x, 'y':self.y}
+                   'height': self.height, 'x': self.x, 'y': self.y}
         return new_dic
 
     def to_csv(self):
