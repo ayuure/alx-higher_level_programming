@@ -6,7 +6,7 @@ import csv
 """base class"""
 
 
-class Base():
+class Base:
     """Initialization of the class"""
     __nb_object = 0
 
