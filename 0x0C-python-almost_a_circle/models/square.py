@@ -22,24 +22,23 @@ class Square(Rectangle):
         self.height = value
 
     def __str__(self):
-         """override"""
-         return '[{}] ({}) {}/{} - {}'.format(__class__.__name__ ,
-                                                self.id, self.x, self.y, 
-                                                self.size)
+        """override"""
+        return '[{}] ({}) {}/{} - {}'.format(__class__.__name__ ,
+                                              self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
-      """update class"""
-      if args:
-        attrs = ['id', 'size', 'x', 'y']
+        """update class"""
+        if args:
+            attrs = ['id', 'size', 'x', 'y']
         for i, arg in enumerate(args):
-            setattr(self, attrs[i],arg)
-      else:
-        for key, value in kwargs.items():
+            setattr(self, attrs[i], arg)
+        else:
+         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def to_dictionary(self):
         """to_dict method"""
-        new_dic = {'id': self.id, 'size': self.width,'x':self.x, 'y':self.y}
+        new_dic = {'id': self.id, 'size': self.width,'x': self.x, 'y': self.y}
         return new_dic
 
     def to_csv(self):
