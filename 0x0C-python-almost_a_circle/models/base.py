@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-import json
-import os
-import csv
-
 """
 base class that contains methods that will be inherited by other classes
 """
+import json
+import os
+import csv
 
 
 class Base:
