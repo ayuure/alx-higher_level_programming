@@ -63,6 +63,7 @@ class Base:
     def save_to_file_csv(cls, list_objs):
         """Serialize instances to CSV and write to file"""
         filename = cls.__name__ + ".csv"
+
         with open(filename, mode='w', newline='') as f:
             writer = csv.writer(f)
             for obj in list_objs:
@@ -74,6 +75,7 @@ class Base:
         from models.rectangle import Rectangle
         from models.square import Square
         list_objs = []
+
         with open("{}.csv".format(cls.__name__), "r", newline="",
                   encoding="utf-8") as f:
             rd = csv.reader(f)
@@ -95,6 +97,7 @@ class Base:
         import time
         from random import randrange
         turtle.Screen().colormode(255)
+
         for item in list_rectangles + list_squares:
             img = turtle.Turtle()
             img.color((randrange(255), randrange(255), randrange(255)))
