@@ -46,7 +46,7 @@ class Base():
     @classmethod
     def create(cls, **kwargs):
         """Create an instance with attributes set from keyword arguments"""
-        instance = cls(**kwargs)  # Create an instance using keyword arguments
+        instance = cls(**kwargs)
         return instance
 
     @classmethod
