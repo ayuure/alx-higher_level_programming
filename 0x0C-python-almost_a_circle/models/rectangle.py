@@ -79,7 +79,7 @@ class Rectangle(Base):
 
     def __str__(self):
         """str overwrite method"""
-        return'[{}] ({}) {}/{} - {}/{}'.format(__class__.__name__ , self.id, self.x, self.y, self.__width, self.__height)
+        return'[{}] ({}) {}/{} - {}/{}'.format(__class__.__name__, self.id, self.x, self.y, self.__width, self.__height)
 
     def update(self, *args, **kwargs):
         """update method"""
