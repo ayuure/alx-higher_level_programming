@@ -9,7 +9,7 @@ class Rectangle(Base):
         """init method"""
         super().__init__(id)
         self.width = width
-        self.height =  height
+        self.height = height
         self.x = x
         self.y = y
 
@@ -56,7 +56,7 @@ class Rectangle(Base):
         """setter for y method"""
         self.validate_input('y', value, flag=False)
         self.__y = value
-    
+
     def validate_input(self, name, input, flag=True):
         """validation method"""
         if not isinstance(input, int):
@@ -65,44 +65,44 @@ class Rectangle(Base):
             raise ValueError('{} must be > 0'.format(name))
         elif input < 0:
             raise ValueError('{} must be >= 0'.format(name))
-        
+
     def area(self):
         """area method"""
         return self.height * self.width
-    
+
     def display(self):
         """display method"""
         for _ in range(self.y):
             print()
         for _ in range(self.height):
             print(" " * self.x + "#" * self.width)
-    
+
     def __str__(self):
         """str overwrite method"""
         return '[{}] ({}) {}/{} - {}/{}'.format(__class__.__name__ ,
                                                 self.id, self.x, self.y, 
                                                 self.__width, self.__height)
-    
+
     def update(self, *args, **kwargs):
-      """update method"""
-      if args:
-        attrs = ['id', 'width', 'height', 'x', 'y']
-        for i, arg in enumerate(args):
-            setattr(self, attrs[i],arg)
-      else:
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        """update method"""
+        if args:
+            attrs = ['id', 'width', 'height', 'x', 'y']
+            for i, arg in enumerate(args):
+                setattr(self, attrs[i], arg)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
         """to dictionary method"""
-        #attr = ['id', 'width', 'height', 'x', 'y']
-        new_dic = {'id': self.id, 'width': self.width, 'height': self.height, 'x':self.x, 'y':self.y}
+        new_dic = {'id': self.id, 'width': self.width,
+                   'height': self.height, 'x':self.x, 'y':self.y}
         return new_dic
-    
+
     def to_csv(self):
         """Convert instance attributes to CSV-compatible format"""
         return [self.id, self.width, self.height, self.x, self.y]
-    
+
     @classmethod
     def create(cls, **kwargs):
         """Create an instance with attributes set from keyword arguments"""
