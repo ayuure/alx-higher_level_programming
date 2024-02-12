@@ -3,7 +3,9 @@ import json
 import os
 import csv
 
-"""base class"""
+"""
+base class that contains methods that will be inherited by other classes
+"""
 
 
 class Base:
