@@ -23,7 +23,7 @@ class Square(Rectangle):
 
     def __str__(self):
         """override"""
-        return '[{}] ({}) {}/{} - {}'.format(__class__.__name__ ,
+        return '[{}] ({}) {}/{} - {}'.format(__class__.__name__,
                                               self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
@@ -38,7 +38,7 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """to_dict method"""
-        new_dic = {'id': self.id, 'size': self.width,'x': self.x, 'y': self.y}
+        new_dic = {'id': self.id, 'size': self.width, 'x': self.x, 'y': self.y}
         return new_dic
 
     def to_csv(self):
