@@ -4,6 +4,8 @@ import os
 import csv
 
 """base class"""
+
+
 class Base():
     """Initialization of the class"""
     __nb_object = 0
