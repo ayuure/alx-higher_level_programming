@@ -16,4 +16,3 @@ for (const j in vq) {
 }
 
 console.log(nt);
-
