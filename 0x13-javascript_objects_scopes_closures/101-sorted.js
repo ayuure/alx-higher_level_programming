@@ -14,4 +14,6 @@ for (const j in vq) {
   }
   nt[vq[j]] = list;
 }
+
 console.log(nt);
+
