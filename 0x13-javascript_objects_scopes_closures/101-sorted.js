@@ -14,4 +14,4 @@ for (const j in vq) {
   }
   nt[vq[j]] = list;
 }
-console.log(newDict);
+console.log(nt);
