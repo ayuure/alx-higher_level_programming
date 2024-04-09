@@ -1,18 +1,10 @@
 #!/usr/bin/node
-const dict = require('./101-data').dict;
-
-const t = Object.entries(dict);
-const v = Object.values(dict);
-const vq = [...new Set(v)];
-const nt = {};
-for (const j in vq) {
-  const list = [];
-  for (const k in t) {
-    if (t[k][1] === vq[j]) {
-      list.unshift(t[k][0]);
+const { dict } = require('./101-data.js');
+const Dicn = {};
+for (const N in dict) {
+    if (Dicn[dict[N]] === undefined) {
+	Dicn[dict[N]] = [];
     }
-  }
-  nt[vq[j]] = list;
+    Dicn[dict[N]].push(N);
 }
-
-console.log(nt);
+console.log(Dicn);
