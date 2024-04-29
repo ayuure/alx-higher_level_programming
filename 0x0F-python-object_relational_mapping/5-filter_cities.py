@@ -7,8 +7,12 @@ import sys
 
 def take_argu(username, password, database, state_name):
     db = MySQLdb.connect(
-        host="127.0.0.1", port=3306,
-        user=username, passwd=password, db=database)
+        host="localhost",
+        port=3306,
+        user=username,
+        password=password,
+        db=database
+    )
     cur = db.cursor()
     cur.execute("SELECT id, name FROM cities WHERE state_id = (SELECT id FROM states WHERE name = %s )",
                 (state_name,))

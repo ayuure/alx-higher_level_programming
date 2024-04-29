@@ -9,8 +9,9 @@ def list_names_n(username, password, name):
         host="localhost",
         port=3306,
         user=username,
-        passwd=password,
-        db=name)
+        password=password,
+        db=name
+    )
     cur = db.cursor()
     cur.execute('SELECT * FROM states WHERE name LIKE BINARY "N%" ORDER BY states.id ASC')
     stateNames = cur.fetchall()

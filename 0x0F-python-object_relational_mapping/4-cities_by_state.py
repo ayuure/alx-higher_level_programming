@@ -7,8 +7,12 @@ import sys
 
 def list_cities(username, password, database):
     db = MySQLdb.connect(
-    host="127.0.0.1", port=3306,
-    user=username, passwd=password, db=database)
+        host="localhost",
+        port=3306,
+        user=username,
+        password=password,
+        db=database
+    )
     cur = db.cursor()
     cur.execute("SELECT * FROM cities")
     states = cur.fetchall()
