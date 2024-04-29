@@ -6,13 +6,13 @@ import MySQLdb
 
 def list_names_n(username, password, name):
     db = MySQLdb.connect(
-        host="127.0.0.1",
+        host="localhost",
         port=3306,
         user=username,
         passwd=password,
         db=name)
     cur = db.cursor()
-    cur.execute('SELECT * FROM states WHERE name LIKE "N%" ORDER BY id ASC')
+    cur.execute('SELECT * FROM states WHERE name LIKE "N%" ORDER BY states.id ASC')
     stateNames = cur.fetchall()
     for name in stateNames:
         print(name)
