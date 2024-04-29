@@ -22,12 +22,12 @@ def list_cities(username, password, database):
     cur.execute(query)
     states = cur.fetchall()
 
-
     for state_name in states:
         print(state_name)
 
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     username, password, database = sys.argv[1:]
