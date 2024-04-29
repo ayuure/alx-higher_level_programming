@@ -15,7 +15,7 @@ def take_argu(username, password, database, state_name):
     )
     query = """
             SELECT * FROM states
-            WHERE name LIKE %s
+            WHERE name LIKE BINARY '{}'
             ORDER BY states.id ASC
             """.format(state_name)
     cur = db.cursor()
