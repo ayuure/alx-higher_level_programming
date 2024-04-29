@@ -14,10 +14,11 @@ def take_argu(username, password, database, state_name):
         db=database
     )
     query = """
-            SELECT id, name FROM cities
-            WHERE state_id = 
-            (SELECT id FROM states WHERE name = %s
-            """
+        SELECT cities.name
+        FROM cities
+        LEFT JOIN states ON states.id = cities.state_id
+        WHERE states.name = %s
+    """
     cur = db.cursor()
     cur.execute(query,
                 (state_name,))
