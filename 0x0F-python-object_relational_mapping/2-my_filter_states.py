@@ -4,6 +4,7 @@
 import MySQLdb
 import sys
 
+
 def take_argu(username, password, database, state_name):
     db = MySQLdb.connect(
         host="localhost",
