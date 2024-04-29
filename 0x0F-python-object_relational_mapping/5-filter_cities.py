@@ -13,8 +13,13 @@ def take_argu(username, password, database, state_name):
         password=password,
         db=database
     )
+    query = """
+            SELECT id, name FROM cities
+            WHERE state_id = 
+            (SELECT id FROM states WHERE name = %s
+            """
     cur = db.cursor()
-    cur.execute("SELECT id, name FROM cities WHERE state_id = (SELECT id FROM states WHERE name = %s )",
+    cur.execute(query,
                 (state_name,))
     states = cur.fetchall()
 
