@@ -5,7 +5,11 @@ import sys
 import MySQLdb
 
 def list_names_n(username, password, name):
-    db = MySQLdb.connect(host="127.0.0.1", port=3306, user=username, passwd=password, db=name)
+    db = MySQLdb.connect(
+        host="127.0.0.1", port=3306,
+        user=username, 
+        passwd=password, 
+        db=name)
     cur = db.cursor()
     cur.execute('SELECT * FROM states WHERE name LIKE "N%" ORDER BY id ASC')
     stateNames = cur.fetchall()
@@ -14,6 +18,7 @@ def list_names_n(username, password, name):
 
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
 

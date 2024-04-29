@@ -6,6 +6,7 @@ from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 import sys
 
+
 if __name__ == "__main__":
     engine = create_engine(
         "mysql+mysqldb://{}:{}@localhost:3306/{}".format(
@@ -19,6 +20,6 @@ if __name__ == "__main__":
     session.add(State(name="Louisiana"))
     session.commit()
     state_new = session.query(State).order_by(State.id.desc()).first()
-    
+
     print(state_new.id)
     session.close()
