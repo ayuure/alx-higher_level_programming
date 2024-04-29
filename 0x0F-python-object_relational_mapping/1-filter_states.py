@@ -4,6 +4,7 @@
 import sys
 import MySQLdb
 
+
 def list_names_n(username, password, name):
     db = MySQLdb.connect(
         host="localhost",
