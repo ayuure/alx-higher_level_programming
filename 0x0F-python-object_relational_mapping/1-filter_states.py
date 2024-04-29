@@ -17,7 +17,7 @@ def list_names_n(username, password, name):
     query = """
         SELECT * FROM states
         WHERE name LIKE BINARY "N%"
-        ORDER BY states.id ASC'"""
+        ORDER BY states.id ASC"""
     cur.execute(query)
     stateNames = cur.fetchall()
     for name in stateNames:
