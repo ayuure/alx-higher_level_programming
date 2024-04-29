@@ -15,7 +15,7 @@ def take_argu(username, password, database, state_name):
     )
     query = """
             SELECT * FROM states
-            WHERE name LIKE %s 
+            WHERE name LIKE %s
             ORDER BY id ASC
             """
     cur = db.cursor()
@@ -23,12 +23,12 @@ def take_argu(username, password, database, state_name):
                 (state_name + '%',))
     states = cur.fetchall()
 
-
     for state_name in states:
         print(state_name)
 
     cur.close()
     db.close()
+
 
 if __name__ == "__main__":
     username, password, database, state_name = sys.argv[1:]
